@@ -1,7 +1,7 @@
 import {createStore} from "redux";
 
 // начальное состояние
-const initialState = {count: 7}
+const initialState = {count: 0}
 
 // список всех actions
 export const countIncremented = "count/increment";
@@ -27,3 +27,4 @@ function reducer(state, action) {
 
 // Инициализируем store
 export const store = createStore(reducer, initialState)
+
