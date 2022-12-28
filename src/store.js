@@ -7,6 +7,10 @@ const initialState = {count: 0}
 export const countIncremented = "count/increment";
 export const countDecremented = "count/decrement";
 
+// Шаблоны всех actions
+export const actionCountIncremented = (number) => ({type: countIncremented, payload: number})
+export const actionCountDecremented = (number) => ({type: countDecremented, payload: number})
+
 // прописываем алгоритм: при каком action как менять состояние
 function reducer(state, action) {
     switch (action.type) {
